@@ -1,0 +1,44 @@
+html,
+body {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ color: #211f1e ;
+ background-size: cover;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+.container {
+ position: relative;
+ top: 100px;
+}
+
+h1 {
+ font-family: "HelveticaNeue-UltraLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-size: 30px;
+ font-weight: normal;
+ margin: 0;
+ text-align: center;
+}
+
+.panel-default {
+    background-color:#D4D4D4!important;
+}
+
+.weather img {
+    width: 80px;
+    position: absolute;
+    margin: auto;
+    top: 85px;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+}
+
+.high, .low,
+.hourly .temp {
+ font-size: 16px;
+ margin-bottom: 0px;
+}

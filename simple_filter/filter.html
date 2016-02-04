@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script>
+        function MoviesCtrl($scope) {
+            $scope.movies = [
+                { name: "Spiderman" },
+                { name: "X-men" },
+                { name: "Avengers" },
+                { name: "Les gardiens de la galaxie" },
+                { name: "Deadpool" },
+                { name: "Hulk" }
+            ];     
+            $scope.title = 'Movie list';
+        }
+    </script>
+  </head>
+  <body>
+    <div ng-controller="MoviesCtrl">
+        <h1>{{title}}</h1>
+        Search: <input ng-model="search">
+        <ul>
+            <li ng-repeat="movie in movies | filter:search ">
+                {{movie.name}}
+            </li>
+        </ul>
+    </div>
+  </body>
+</html>
